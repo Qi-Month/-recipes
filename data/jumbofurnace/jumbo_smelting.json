@@ -8,7 +8,7 @@
         {
             "name": "ingredients",
             "role": "input",
-            "type": "ingredient[]"
+            "type": "flat_sized_ingredient[]"
         },
         {
             "name": "cookingtime",
