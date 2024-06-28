@@ -20,7 +20,7 @@
             "name": "experience",
             "role": "other",
             "type": "float",
-            "optional": 0.1
+            "optional": 0.0
         }
     ]
 }
