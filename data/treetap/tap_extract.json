@@ -1,0 +1,103 @@
+{
+    "keys": [
+        {
+            "name": "result",
+            "role": "output",
+            "type": "item_stack"
+        },
+        {
+            "name": "log",
+            "role": "input",
+            "type": "ingredient"
+        },
+        {
+            "name": "processing_time",
+            "role": "other",
+            "type": "int",
+            "optional": 1000
+        },
+        {
+            "name": "harvest_item",
+            "role": "input",
+            "type": "ingredient",
+            "optional": null
+        },
+        {
+            "name": "wooden_result",
+            "role": "output",
+            "type": "item_stack",
+            "optional": null,
+            "allow_empty": true,
+            "function_names": [
+                "wooden_result"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "collect_bucket",
+            "role": "other",
+            "type": "boolean",
+            "optional": true,
+            "function_names": [
+                "collect_bucket"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "display_fluid",
+            "role": "other",
+            "type": "fluid_stack",
+            "optional": {
+                "id": "minecraft:water",
+                "amount": 1000
+            },
+            "function_names": [
+                "display_fluid"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "fluid_color",
+            "role": "other",
+            "type": "string",
+            "optional": "",
+            "function_names": [
+                "fluid_color"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "required_block_count",
+            "role": "other",
+            "type": "int",
+            "optional": 1,
+            "function_names": [
+                "required_block_count"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "life_cycle",
+            "role": "other",
+            "type": "int[]",
+            "optional": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "function_names": [
+                "life_cycle"
+            ],
+            "excluded": true
+        }
+    ]
+}
