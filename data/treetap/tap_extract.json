@@ -17,12 +17,6 @@
             "optional": 1000
         },
         {
-            "name": "collect_bucket",
-            "role": "other",
-            "type": "boolean",
-            "optional": false
-        },
-        {
             "name": "harvest_item",
             "role": "input",
             "type": "ingredient",
@@ -32,20 +26,44 @@
             "name": "wooden_result",
             "role": "output",
             "type": "item_stack",
-            "optional": null
+            "optional": null,
+            "allow_empty": true,
+            "function_names": [
+                "wooden_result"
+            ],
+            "excluded": true
+        },
+        {
+            "name": "collect_bucket",
+            "role": "other",
+            "type": "boolean",
+            "optional": true,
+            "function_names": [
+                "collect_bucket"
+            ],
+            "excluded": true
         },
         {
             "name": "display_fluid",
             "role": "other",
             "type": "fluid_stack",
-            "optional": null,
+            "optional": {
+                "id": "minecraft:water",
+                "amount": 1000
+            },
+            "function_names": [
+                "display_fluid"
+            ],
             "excluded": true
         },
         {
             "name": "fluid_color",
             "role": "other",
             "type": "string",
-            "optional": null,
+            "optional": "",
+            "function_names": [
+                "fluid_color"
+            ],
             "excluded": true
         },
         {
@@ -53,6 +71,9 @@
             "role": "other",
             "type": "int",
             "optional": 1,
+            "function_names": [
+                "required_block_count"
+            ],
             "excluded": true
         },
         {
@@ -72,6 +93,9 @@
                 1,
                 1,
                 1
+            ],
+            "function_names": [
+                "life_cycle"
             ],
             "excluded": true
         }
